@@ -1,2 +1,2 @@
 # Bloid
-A robot that manipulates balls.
+This is a custom, ball balancing robot. 
