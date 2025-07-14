@@ -40,17 +40,15 @@ This will lead to actually moving the servos.
 
 ### CAD
 Cadding the whole hardware was the most difficult part, as we had to calculate/set all the lengths and values accurately for the math in the Reverse kinematics and PID to actually work.
-(Jack talk about ur experiences)
+
 <img width="552" height="483" alt="Screenshot 2025-07-14 at 3 58 52 AM" src="https://github.com/user-attachments/assets/6d4643be-b018-48a1-952f-4c5e7154806b" />
 
 <img width="423" height="375" alt="Screenshot 2025-07-14 at 2 55 12 AM" src="https://github.com/user-attachments/assets/810c78ef-9a29-460d-8096-df0c92f06335" />
 
-(add final images)
 
 ### Hardware
 Building the hardware was the greatest strugle. The main issue was the ball mates, which took many different 3D printing attempts to pull of, since the PLA was so weak and the parts kept on breaking.
 For the camera mount, we ended up cutting up cardboard and created pillars, where the camera would be able to mount.
-(edit later)
 
 All of these steps we worked on at the same time gradually during the listed time periods.
 
