@@ -1,6 +1,6 @@
 ---
 Title: "Bloid"
-Author: "Chunhwee Choi, Yash Sethuramen, Jackson
+Author: "Chunhwee Choi, Yash Sethuramen, Jackson"
 Description: "A ball balancing machine"
 Created_at: "2025-07-11"
 ---
