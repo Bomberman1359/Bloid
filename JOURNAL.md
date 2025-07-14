@@ -50,6 +50,8 @@ Cadding the whole hardware was the most difficult part, as we had to calculate/s
 
 <img width="423" height="375" alt="Screenshot 2025-07-14 at 2 55 12 AM" src="https://github.com/user-attachments/assets/810c78ef-9a29-460d-8096-df0c92f06335" />
 
+It took Jack basically 2 full days until the CAD worked out.
+
 
 ### Hardware
 Building the hardware was the greatest strugle. The main issue was printing the ball mates, which took many different 3D printing attempts to pull of, since the PLA was  weak and the parts kept on breaking. After many adjustments, we created one that was stable enough.
@@ -62,11 +64,8 @@ For the camera mount, we ended up cutting up cardboard and created pillars, wher
 
 ![1000004389](https://github.com/user-attachments/assets/e10fe7cb-7cf3-41ac-b1c6-65ecf685263f)
 
-The hardwares were printed individually throughout all days.
-
 ![1000004386](https://github.com/user-attachments/assets/583e681c-99e8-4aa3-ac0d-922419fb91be)
 
-
-All of these steps we worked on at the same time gradually during the listed time periods.
+The hardwares were printed individually throughout all days.
 
 
