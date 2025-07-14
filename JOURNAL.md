@@ -8,7 +8,7 @@ Created_at: "2025-07-11"
 Total Number of Hours Spent: 72 Hours
 
 ## Brainstorming and material gathering: 7/11/2025-7/12/2025, 8 Hours
-We had absolutely no idea what to create. We thought there would be a theme but it turned out there wasn't. It took us a while to come up with an idea, but in the end we decided to go with a ball balancing machine, which Yash and Jack remembered watching from past videos.
+At first, we had absolutely no idea what to create. It took us a while to come up with an idea, but in the end we decided to go with a ball balancing machine, which Yash and Jack remembered watching from past videos.
 With an idea, we started collecting materials that we thought were necessary for the project. We first started with the huge servos, which we started with 6 of them for a 6 armed robot. 
 We also gathered a bunch of wires and used Yash's raspberry pi to wire things together with a breadboard.
 
@@ -24,22 +24,27 @@ The way the ball tracker works is that we first take photos of the ball, remove 
 
 ![Photo on 7-13-25 at 6 09 PM](https://github.com/user-attachments/assets/fa0e95cb-dc11-4aee-88f5-4175dc3cae61)
 
-We had to experiment with many different types of balls since the webcam quality wasn't the best, and we had a lot of trouble tracking. In the end we decided to 3D-print a red ball, and while the tracking wasn't perfect, with a white platform in the background, the tracking would have worked out.
-The tracking software would send the (x,y,z) coordinates of the ball, which would be sent to the reverse kinematics code.
+We had to experiment with many different colors/types of balls since the webcam quality wasn't the best, and we had a lot of trouble tracking. At first we started with a white ping pong ball, which didn't really work because white was such a common color. Then we tried pink (which the ball broke), blue (it was too shiny), and in the end we settled with red. We 3D-printed the red ball, and while the tracking wasn't perfect, with a white platform in the background, we made the tracking work out.
+The tracking software would send the (x,y,z) coordinates of the ball, which would be sent to the reverse kinematics code. We had to experiment with the tracking every single day whenever we had time.
 
 ### Reverse Kinematics and PID:
 To actually figure out how the platform should be balanced based on the ball's position, we had to figure out the math for reverse kinematics. While 2D reverse kinematics was doable, 3D was a whole another story.
-In the end, we vibe coded the formula and used test values and forward kinematics to confirm the accuracy of the math.
+In the end, we vibe coded the formula since it was too complicated and used test values and forward kinematics to confirm the accuracy of the math.
 
 <img width="519" height="289" alt="Screenshot 2025-07-14 at 3 05 01 AM" src="https://github.com/user-attachments/assets/713fb997-47fc-4708-bf71-a3b1000d1335" />
 
-For the PID, we also vibe coded. We came up with different methods to test the accuracy of the PID as well, such as creating a table of sample values to see whether the platform would move smoothly.
-This will lead to actually moving the servos.
+The image above is only a small segment of the reverse kinematics code.
+
+For the PID, we also vibe coded. We came up with different methods to test the accuracy of the PID as well, such as creating a table of sample values to see whether the platform would move smoothly. With the PID code all set up, this will allow the servos to actually move the platform accordingly.
 
 <img width="673" height="423" alt="Screenshot 2025-07-14 at 3 05 37 AM" src="https://github.com/user-attachments/assets/d46d36e3-f247-4dae-a899-1648a4de9be8" />
 
+Another small segment of the PID code.
+
+Reverse Kinematics and PID were created and edited throughout all days.
+
 ### CAD
-Cadding the whole hardware was the most difficult part, as we had to calculate/set all the lengths and values accurately for the math in the Reverse kinematics and PID to actually work.
+Cadding the whole hardware was the most difficult part, as we had to calculate/set all the lengths and values accurately for the math in the Reverse kinematics and PID to actually work. The actual design ultimately took up until the last day, and we 3D printed each of the parts 1 at a time.
 
 <img width="552" height="483" alt="Screenshot 2025-07-14 at 3 58 52 AM" src="https://github.com/user-attachments/assets/6d4643be-b018-48a1-952f-4c5e7154806b" />
 
@@ -47,7 +52,8 @@ Cadding the whole hardware was the most difficult part, as we had to calculate/s
 
 
 ### Hardware
-Building the hardware was the greatest strugle. The main issue was the ball mates, which took many different 3D printing attempts to pull of, since the PLA was so weak and the parts kept on breaking.
+Building the hardware was the greatest strugle. The main issue was printing the ball mates, which took many different 3D printing attempts to pull of, since the PLA was  weak and the parts kept on breaking. After many adjustments, we created one that was stable enough.
+
 For the camera mount, we ended up cutting up cardboard and created pillars, where the camera would be able to mount.
 
 ![1000004385](https://github.com/user-attachments/assets/936b9ce3-18e1-4d8f-a9bb-28c9909ffaee)
@@ -55,6 +61,8 @@ For the camera mount, we ended up cutting up cardboard and created pillars, wher
 ![1000004384](https://github.com/user-attachments/assets/4306268e-80b0-4d8f-989c-3a9daa396b5f)
 
 ![1000004389](https://github.com/user-attachments/assets/e10fe7cb-7cf3-41ac-b1c6-65ecf685263f)
+
+The hardwares were printed individually throughout all days.
 
 ![1000004386](https://github.com/user-attachments/assets/583e681c-99e8-4aa3-ac0d-922419fb91be)
 
