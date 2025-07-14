@@ -1,0 +1,76 @@
+import numpy as np
+import cv2
+import time
+
+# Widened HSV range for indoor lighting
+whiteLower = (0, 0, 170)
+whiteUpper = (179, 80, 255)
+
+camera = cv2.VideoCapture(0)
+time.sleep(2)
+
+def find_color_mask(frame):
+	blurred = cv2.GaussianBlur(frame, (11, 11), 0)
+	hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
+	mask = cv2.inRange(hsv, whiteLower, whiteUpper)
+	mask = cv2.erode(mask, None, iterations=2)
+	mask = cv2.dilate(mask, None, iterations=2)
+	return mask
+
+def is_circular(contour, threshold=0.6):  # More forgiving
+	area = cv2.contourArea(contour)
+	perimeter = cv2.arcLength(contour, True)
+	if perimeter == 0:
+		return False
+	circularity = 4 * np.pi * (area / (perimeter * perimeter))
+	return circularity > threshold
+
+def find_largest_contour(frame, max_radius=120):
+	cnts, _ = cv2.findContours(frame.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+	largest = None
+	largest_radius = 0
+
+	for c in cnts:
+		((x, y), radius) = cv2.minEnclosingCircle(c)
+		if 5 < radius < max_radius and is_circular(c):
+			if radius > largest_radius:
+				largest = c
+				largest_radius = radius
+
+	if largest is not None:
+		((x, y), radius) = cv2.minEnclosingCircle(largest)
+		M = cv2.moments(largest)
+		if M["m00"] != 0:
+			center = (int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"]))
+		else:
+			center = (int(x), int(y))
+	else:
+		(x, y, radius, center) = (0, 0, 0, (0, 0))
+
+	return x, y, radius, center
+
+while True:
+	ret, frame = camera.read()
+	if not ret or frame is None:
+		print("Error: Frame not captured")
+		break
+
+	mask = find_color_mask(frame)
+	x, y, radius, center = find_largest_contour(mask)
+
+	if radius > 10:
+		cv2.circle(frame, (int(x), int(y)), int(radius), (255, 0, 0), 2)
+		cv2.circle(frame, center, 5, (255, 0, 0), -1)
+		cv2.putText(frame, f"X: {int(x)}  Y: {int(y)}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
+	else:
+		cv2.putText(frame, "Ball not detected", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
+
+	cv2.imshow("Tracking", frame)
+
+	if cv2.waitKey(1) & 0xff == ord('q'):
+		break
+
+camera.release()
+cv2.destroyAllWindows()
+
