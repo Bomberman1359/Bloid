@@ -50,6 +50,15 @@ Cadding the whole hardware was the most difficult part, as we had to calculate/s
 Building the hardware was the greatest strugle. The main issue was the ball mates, which took many different 3D printing attempts to pull of, since the PLA was so weak and the parts kept on breaking.
 For the camera mount, we ended up cutting up cardboard and created pillars, where the camera would be able to mount.
 
+![1000004385](https://github.com/user-attachments/assets/936b9ce3-18e1-4d8f-a9bb-28c9909ffaee)
+
+![1000004384](https://github.com/user-attachments/assets/4306268e-80b0-4d8f-989c-3a9daa396b5f)
+
+![1000004389](https://github.com/user-attachments/assets/e10fe7cb-7cf3-41ac-b1c6-65ecf685263f)
+
+![1000004386](https://github.com/user-attachments/assets/583e681c-99e8-4aa3-ac0d-922419fb91be)
+
+
 All of these steps we worked on at the same time gradually during the listed time periods.
 
 
