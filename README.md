@@ -16,3 +16,15 @@ This is a custom, ball balancing robot.
 ![1000004389](https://github.com/user-attachments/assets/93c50e09-9985-4714-9c74-bc205221e27f)
 
 ![1000004386](https://github.com/user-attachments/assets/9fed8b3a-c16c-4109-bfb3-fc7ce4b3d050)
+
+## BOM
+|    Item    | Quantity | Vendor | Total Price |
+| :-------- | :-------: | :----- | ----------: |
+| Raspberry Pi | 1 | [PiShop USA](https://www.pishop.us/product/raspberry-pi-4-model-b-1gb/?srsltid=AfmBOorvizn3933kIKKK45gcBSmxiYC6vVZNzOPITzODrxT-XyKx8Tb-PpY) | $35.00 |
+| Webcam |  1  |  [Walmart](https://www.walmart.com/ip/1080P-Web-Cam-HD-Camera-Webcam-with-Mic-Microphone-for-Computer-PC-Laptop-Notebook/7115471225?wmlspartner=wlpa&selectedSellerId=101287330&selectedOfferId=19192E1722E13AD9BEAA8E743E946E40&conditionGroupCode=1&gQT=1)| $7.99 |
+| Servos Set | 1    | [Amazon](https://www.amazon.com/4-Pack-MG996R-Torque-Digital-Helicopter/dp/B07MFK266B?th=1) | $17.99 | 
+| M3 Hardware (Set) | 1 | [Amazon](https://www.amazon.com/Taiss-540PCS-Stainless-Socket-Washers/dp/B0D4L6QRZB?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A2VILSBUHD1UD8&gQT=2&th=1) | $9.99 |
+| Dupont Wires Set| 1 | [Amazon](https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78) | $6.98 |
+| 3D Printer and filaments| Undef | Undef | Undef |
+
+Net Total Cost (Not including 3D printer/filaments): $77.95
