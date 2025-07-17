@@ -9,6 +9,39 @@ This is a custom, ball balancing robot.
 
 <img width="287" height="379" alt="Screenshot 2025-07-14 at 4 37 16 AM" src="https://github.com/user-attachments/assets/a4b8bea8-8ad2-404d-b957-30863038bfd9" />
 
+## Software setup
+
+Depending on what device you are on and what directory you export to, the first few steps could vary, so in summary: **you need to ```cd``` into the ```/Software/Main``` folder**
+
+From there, the setup process is very simple:
+
+Create a new python virtual environment:
+
+```
+python -m venv env
+```
+
+Enter the environment:
+
+```
+source env/bin/activate
+```
+
+Install the required packages:
+
+```
+pip install opencv-python pigpio 
+```
+
+Start up the main program:
+
+```
+#Start up the pigpio daemon
+sudo pigpiod
+#Main code
+python main.py
+```
+
 ## Final Product
 
 ![1000004387](https://github.com/user-attachments/assets/3108bd6c-dd6b-4e91-bc90-f5ccc8102a9e)
