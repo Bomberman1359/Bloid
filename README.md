@@ -61,3 +61,6 @@ python main.py
 | 3D Printer and filaments| Undef | Undef | Undef |
 
 Net Total Cost (Not including 3D printer/filaments): $77.95
+
+## Link to the demo:
+https://youtu.be/3Ihvu0gQJfA
