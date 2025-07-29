@@ -42,6 +42,10 @@ sudo pigpiod
 python main.py
 ```
 
+## Wiring
+
+![Wiring Diagram](https://github.com/Bomberman1359/Bloid/blob/main/Wiring.png)
+
 ## Final Product
 
 ![1000004387](https://github.com/user-attachments/assets/3108bd6c-dd6b-4e91-bc90-f5ccc8102a9e)
